@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+@media screen and (max-width: 50rem) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  article {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+:root {
+  --header-bg-color: #F8EDE3;
+  --main-bg-color: #BDD2B6;
+  --aside-bg-color: #A2B29F;
+  --footer-bg-color: #798777;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  padding: 0.25rem 0.5rem;
+  background-color: #ad937b;
+  border-radius: 0.25rem;
+  color: #eee;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  padding: 1rem;
+  background-color: var(--header-bg-color);
+  box-shadow: 0 1rem #222;
+}
+header h1 {
+  flex-grow: 1;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+header nav ul,
+header nav li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+header nav li {
+  margin-inline: 0.5rem;
+  transition: transform 250ms ease;
+}
+header nav li:hover {
+  transform: scale(1.05);
+}
+header nav a {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #ad937b;
+  color: #eee;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: var(--main-bg-color);
+}
+main #Content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50rem;
+  flex-grow: 999;
+  gap: 0.5rem;
+}
+main #Content article {
+  display: flex;
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: #ddd;
+  border: 2px solid #555;
+  border-radius: 0.5rem;
+  box-shadow: 8px 8px #555;
+}
+main #Content article > * {
+  margin: 0.5rem;
+}
+main #Content #Menu {
+  display: flex;
+  flex-direction: column;
+}
+main #Content #Menu h2 {
+  width: 100%;
+  text-align: center;
+}
+main #Content #Menu .categories > * {
+  padding: 0.5rem;
+  background-color: #ad937b;
+  border-radius: 1rem;
+  color: #eee;
+  transition: 250ms ease;
+  transition-property: padding, opacity;
+  cursor: pointer;
+}
+main #Content #Menu .categories > *:hover {
+  padding: 0.5rem 1rem;
+  opacity: 0.8;
+}
+main #Content #Menu .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+main #Content #Menu .card-container .card {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  height: 20rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: #eee;
+  border: 2px solid #555;
+  border-radius: 0.5rem;
+  box-shadow: 8px 8px #555;
+  transition: transform 250ms ease;
+}
+main #Content #Menu .card-container .card:hover {
+  transform: scale(1.05);
+}
+main #Content #Menu .card-container .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 10rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 2px 2px rgba(136, 136, 136, 0.5019607843);
+}
+main #Content #Menu .card-container .card figcaption {
+  font-size: 1.25rem;
+  text-align: center;
+}
+main #Content #Menu .card-container .card .price {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: auto;
+}
+main #Content #Menu .card-container .card .price::before {
+  content: "IDR ";
+}
+main aside {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 20rem;
+  flex-grow: 1;
+  align-content: flex-start;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--aside-bg-color);
+  border-radius: 0.5rem;
+}
+main aside .profile-pict {
+  --_size: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: var(--_size);
+  height: var(--_size);
+  margin: 1rem;
+  border: 2px solid #555;
+  border-radius: 0.5rem;
+}
+main aside .profile-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 0.5rem;
+  text-align: center;
+}
+main aside .profile-info > :first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  background-color: var(--footer-bg-color);
+  color: #ccc;
+  font-weight: bold;
+}
+
+.medium-wide-picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 25rem;
+  height: 15rem;
+  border: 10px double #555;
+}
+
+.hide {
+  display: none !important;
+}
+
+.category-btn-active {
+  font-weight: bold;
+}

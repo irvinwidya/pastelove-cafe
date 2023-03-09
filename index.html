@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pastelove Café | Irvin Widyastanto</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1><i class="fa-solid fa-mug-hot"></i>&nbsp;Pastelove Café</h1>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i>&nbsp;Home</a></li>
+                <li><a href="#Menu"><i class="fa-solid fa-utensils"></i>&nbsp;Our Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="Content">
+            <article>
+                <img src="assets/cafe01.jpg" alt="" class="medium-wide-picture">
+                <div>
+                    <h2>Welcome to our webpage!</h2>
+                    <p>Finding yourself having a bad day? Or you can't relax because there's too much task burden on you?</p>
+                    <p>Come join us! Here you can take yourself a brief moment of your life to fully recharge your energy with our fresh and relaxing atmosphere!</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <p>You might wanna try every kind of Pastelove Café specialty, from refreshing drinks such as Pastelove's Herbal Tea to bring up your mood and Chippy Cookies to make your belly smile. We surely would bring you the best moment that makes you feel like home.</p>
+                    <p>Check all our specialty at <a href="menu.html"><i class="fa-solid fa-utensils"></i>&nbsp;Our Menu</a>!</p>
+                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;You can find us at Santai Street, Kenangan City from 5.30AM to 11PM.</p>
+                </div>
+                <img src="assets/cafe02.jpg" alt="" class="medium-wide-picture">
+            </article>
+            <article id="Menu">
+                <h2>Our Menu</h2>
+                <div class="categories">
+                    <span id="CategoryAll" class="category-btn-active" onclick="showAll()">All</span>
+                    <span id="CategoryFood" class="" onclick="showFood()">Food</span>
+                    <span id="CategoryDrink" class="" onclick="showDrink()">Drink</span>
+                </div>
+                <div class="card-container">
+                    <div class="card" data-menu="drink">
+                        <figure>
+                            <img src="assets/menu/herbal-tea.jpg" alt="">
+                            <figcaption>Pastelove's Herbal Tea</figcaption>
+                        </figure>
+                        <span class="price">18,000</span>
+                    </div>
+                    <div class="card" data-menu="food">
+                        <figure>
+                            <img src="assets/menu/chippy-cookies.jpg" alt="">
+                            <figcaption>Chippy Cookies</figcaption>
+                        </figure>
+                        <span class="price">13,000</span>
+                    </div>
+                    <div class="card" data-menu="drink">
+                        <figure>
+                            <img src="assets/menu/matcha-tea.jpg" alt="">
+                            <figcaption>Matcha Tea</figcaption>
+                        </figure>
+                        <span class="price">14,000</span>
+                    </div>
+                    <div class="card" data-menu="drink">
+                        <figure>
+                            <img src="assets/menu/coffee-latte.jpg" alt="">
+                            <figcaption>Coffee Latte</figcaption>
+                        </figure>
+                        <span class="price">24,000</span>
+                    </div>
+                    <div class="card" data-menu="food">
+                        <figure>
+                            <img src="assets/menu/french-fries.jpg" alt="">
+                            <figcaption>French Fries</figcaption>
+                        </figure>
+                        <span class="price">17,000</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <aside>
+            <img src="assets/profile.png" alt="" class="profile-pict">
+            <div class="profile-info">
+                <span>Irvin Widyastanto</span>
+                <span>Bangkit Academy 2023</span>
+                <span>Cloud Computing Cohort</span>
+                <span>CC-42</span>
+                <cite>Website ini dibuat untuk memenuhi "Submission: Tugas Akhir Membuat Website" dari course "Belajar Pemrograman Dasar Web" di platform Dicoding</cite>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        &copy; 2023 - Irvin Widyastanto
+    </footer>
+</body>
+<script src="js/main.js"></script>
+</html>
